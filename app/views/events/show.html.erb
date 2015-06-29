@@ -1,19 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>姓名:</strong>
   <%= @event.title %>
 </p>
 
 <p>
-  <strong>Start at:</strong>
+  <strong>開始時間:</strong>
   <%= @event.start_at %>
 </p>
 
 <p>
-  <strong>End at:</strong>
+  <strong>結束時間:</strong>
   <%= @event.end_at %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%= link_to '編輯', edit_event_path(@event) %> |
+<%= link_to '返回', events_path %>
+<%= link_to("刪除", event_path, :method => :delete) %>

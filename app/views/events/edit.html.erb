@@ -1,6 +1,7 @@
-<h1>Editing Event</h1>
+<h1>修改預約</h1>
+<div class="edit">
+  <%= render 'form' %>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+  <%= link_to '顯示', @event %> |
+  <%= link_to '返回', events_path %>
+</div>
