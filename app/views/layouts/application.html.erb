@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appoint</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="wrapper">
+  <img src="/assets/csie_logo.png"><span class="csie_title"><strong>中央資工教室預約系統</strong></span>
+  <div class="center">
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
+  </div>
+</div>
+</body>
+</html>
